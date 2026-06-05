@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background: rgb(88, 80, 70) ;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(110, 107, 101);
+    border: 2px solid rgb(228, 209, 228);
+    animation: BorderColorChange .1s cubic-bezier(0.1, 0.82, 0.165, 1) infinite alternate;
+}
+
+@keyframes BorderColorChange {
+    0%{
+        border-color: rgb(76, 76, 131);
+    }
+    25%{
+        border-color: rgb(21, 21, 151);
+    }
+    50%{
+        border-color: blueviolet;
+    }
+    75%{
+        border-color: aqua;
+    }
+    100%{
+        border-color: blanchedalmond;
+    }
+}
+
+input[type="text"], input[type="button"]{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+input[type="button"]{
+    color:rgb(14, 11, 8);
+    font-weight: bold;
+    font-family: 'Poppins';
+    background-color: #f07909;
+    border-radius: 10px;
+    
+}
+
+.inputContainer{
+    background-color: rgb(147, 190, 228);
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    
+}
+
+h1{
+    color: #f07909;
+    margin-bottom: 15px;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url("../components/icons8-cercle-50.png");
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:12px;
+    text-align: center;
+}
+
+ul li.checked{
+    text-decoration:line-through;
+    color: rgb(236, 14, 14);
+}
+
+ul li.checked::before{
+    background-image: url("../components/icons8-vérifié-48.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40;
+    font-size: 22px;
+    line-height: 40px;
+    color: rgb(202, 196, 196);
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgb(70, 65, 65);
+}

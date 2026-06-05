@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <main>
+        <h1>To-Do List</h1>
+        <!-- Todo structure -->
+         <div class="container">
+
+            <!-- Input Structure-->
+            <div class="inputContainer">
+
+                <input type="text" id="TextInput1" placeholder="Ajouter une tâche">
+                <input type="button" value="ENTRER" id="btn" onclick="AddTask()">
+
+            </div>
+            <ul id="contentContainer" class="contentContainer">
+                <!-- <li class="checked">Task 1</li> -->
+            </ul>
+         </div>
+    </main>
+
+    <script  src="./src/index.js" defer></script>
+</body>
+</html>
