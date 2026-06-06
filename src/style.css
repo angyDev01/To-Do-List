@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Poppins";
 }
 
 main{
@@ -18,28 +25,10 @@ main{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgb(110, 107, 101);
-    border: 2px solid rgb(228, 209, 228);
-    animation: BorderColorChange .1s cubic-bezier(0.1, 0.82, 0.165, 1) infinite alternate;
+    box-shadow: 5px 15px 20px rgb(34, 33, 31);
+    border: none;
 }
 
-@keyframes BorderColorChange {
-    0%{
-        border-color: rgb(76, 76, 131);
-    }
-    25%{
-        border-color: rgb(21, 21, 151);
-    }
-    50%{
-        border-color: blueviolet;
-    }
-    75%{
-        border-color: aqua;
-    }
-    100%{
-        border-color: blanchedalmond;
-    }
-}
 
 input[type="text"], input[type="button"]{
     border: none;
@@ -70,6 +59,9 @@ input[type="button"]{
 h1{
     color: #f07909;
     margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins';
 }
 
 .container{
@@ -104,7 +96,7 @@ ul li::before{
 
 ul li.checked{
     text-decoration:line-through;
-    color: rgb(236, 14, 14);
+    color: rgb(236, 147, 14);
 }
 
 ul li.checked::before{
